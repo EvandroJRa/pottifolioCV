@@ -1,2 +1,2 @@
-# pottifolioCV
+# potifolioCV
 para fins didáticos
