@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMAÇÃO</title>
+    <style>
+body{ /* estilizando a pagina*/
+    background-color: rgb(0, 0, 0);/* cor da pagina*/
+    color:rgb(255, 255, 255) ; /*cor textos na pagina*/
+    font-family: 'Roboto', sans-serif;/* Fonte dos textos na pagina*/
+    max-width: 1500px; /* tamanho maximo dos elementos*/
+    margin:0 auto; /* centraliza a pagina */
+    padding: 15px; /* aumentando o espaço entre o elemento*/
+}
+/* inicio do cabeçalho*/
+header{
+    display: flex; /*Metodo de estilização*/
+    flex-direction: row; /* Cabeçalho em linha*/
+    justify-content: space-between; /* espaço entre os elementos do cabeçalho*/
+    align-items: center; /* alinhar elementos ao centro*/
+    border-bottom: 1px solid rgb(236, 225, 60);/* linha de borda do cabeçalho*/   
+    
+}
+
+li{
+    display: inline-block;/* muda os elementos par Horizontal*/
+    margin: 30px; /* margem para separar os elementos*/
+}
+
+a{
+    color: white; /* cor do elemento*/
+    text-decoration:none; /* remove o sunblinhado*/
+    font-family:Arial, Helvetica, sans-serif; /* fonte do elemento*/
+
+}
+
+a:hover{ /* muda a cor do texto ao passar o mause*/
+    color: yellow; /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
+    padding: 10px; /* espaçamento entre os elementos e a borda*/
+    border-radius: 15px; /* Adicionando um raio na borda dos elementos*/
+}
+
+h1{
+    font-weight: 700; /* Espessura dafonte do H1*/
+    font-size: 38px; /* Aumentando o tamanho da fonte*/
+    padding: 10px; /* definido um espaçamento entre os elementos*/
+    color: yellow;/*alterando a cor da fonte */
+}
+/*fim do cabeçalho*/
+
+/* principal Inicio*/
+.formacao{
+    display: flex;
+    justify-content: center;/* centralizar elementos*/
+    border-bottom: 1px solid green;     
+}
+
+.ambiental{
+   text-align: center; /* alinhar texto ao centro*/
+   border: 1px solid green;/* Borda*/
+   border-radius: 25px;/*Raio da borda */
+   gap: 10px;
+   margin: 30px;
+}
+
+#ambi{
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+    padding: 35px;
+}
+
+.cidade{
+   text-align: center;
+   border: 1px solid green;
+   border-radius: 25px;
+   gap: 10px;
+   margin: 30px;
+}
+
+#edificio{
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+    padding: 35px;
+}
+
+h3{
+    text-align: center;
+}
+
+h2{
+    font-size: 28px;
+    color: yellow;
+}
+
+.cursos{
+    display: flex;
+    justify-content: center;/* centralizar elementos*/  
+    gap: 30px;  
+}
+.ph{
+   text-align: center; /* alinhar texto ao centro*/
+   border: 1px solid rgb(251, 252, 251);/* Borda*/
+   border-radius: 25px;/*Raio da borda */
+   gap: 10px;
+   margin: 3px;
+}
+
+#python{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+
+.ht{
+   text-align: center; /* alinhar texto ao centro*/
+   border: 1px solid rgb(255, 255, 255);/* Borda*/
+   border-radius: 25px;/*Raio da borda */
+   margin: 3px;
+}
+
+#html{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+
+.cs{
+   text-align: center; /* alinhar texto ao centro*/
+   border: 1px solid rgb(255, 255, 255);/* Borda*/
+   border-radius: 25px;/*Raio da borda */
+   margin: 3px;
+}
+
+#css{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+
+.js{
+   text-align: center; /* alinhar texto ao centro*/
+   border: 1px solid rgb(255, 255, 255);/* Borda*/
+   border-radius: 25px;/*Raio da borda */
+   margin: 3px;
+}
+
+#javascript{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+
+.my{
+   text-align: center; /* alinhar texto ao centro*/
+   border: 1px solid rgb(255, 255, 255);/* Borda*/
+   border-radius: 25px;/*Raio da borda */
+   margin: 3px;
+}
+
+#mysql{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+
+/* Principal FIM*/
+
+    </style>
+</head>
+<body> 
+    <!-- CABEÇALHO--->
+        <!--CABEÇALHO INICIO-->
+            <header>
+                <div id="titulo">
+                    <h1>FORMAÇÃO</h1> 
+                </div>      
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.htm">SOBRE</a></li>
+                    <li><a href="portifolio.html">PORTIFOLIO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </header>
+        <!-- CABEÇALHO FIM-->
+        <!--PRNCIPAL INICIO-->
+            <section class="formacao">
+                <div class="ambiental">
+                    <img id="ambi" src="Arvore.png" alt="arvore">
+                    <h3>Técnologo em Gestão Ambiental</h3>
+                    <p>Centro Universitário Uninter</p>
+                    <P>Ano 2020</P>
+                </div>
+                <div class="cidade">
+                    <img id="edificio" src="cidade.png" alt="edificio">
+                    <h3>Técnico de Edificações</h3>
+                    <p>Senai</p>
+                    <P>Ano 2016</P>
+                </div>
+
+            </section>
+                <h2>Técnologias em formação:</h2>
+                <section class="cursos ">
+                    <div class="ph">
+                        <img id="python" src="python.png" alt="python">
+                        <p>PYTHON</p>
+                    </div>
+
+                    <div class="ht">
+                        <img id="html" src="html.png" alt="python">
+                        <p>HTML</p>
+                    </div>  
+
+                    <div class="cs">
+                        <img id="css" src="css.png" alt="python">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="js">
+                        <img id="javascript" src="js.png" alt="python">
+                        <p>JAVASCRIPT</p>
+                    </div>
+
+                    <div class="my">
+                        <img id="mysql" src="mysql.png" alt="python">
+                        <p>MYSQL</p>
+                    </div>
+
+                </section>
+     <!-- PRINCIPAL FIM-->
+</body>
+</html>

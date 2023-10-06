@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="style.css">-->
+    <!-- Inicio fontes do google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--Fim - fontes do google-->
+    <title>Contato</title>
+
+    <style>
+body{ /* estilizando a pagina*/
+    background-color: rgb(0, 0, 0);/* cor da pagina*/
+    color:rgb(255, 255, 255) ; /*cor textos na pagina*/
+    font-family: 'Roboto', sans-serif;/* Fonte dos textos na pagina*/
+    max-width: 1500px; /* tamanho maximo dos elementos*/
+    margin:0 auto; /* centraliza a pagina */
+    padding: 15px; /* aumentando o espaço entre o elemento*/
+}
+/* inicio do cabeçalho*/
+header{
+    display: flex; /*Metodo de estilização*/
+    flex-direction: row; /* Cabeçalho em linha*/
+    justify-content: space-between; /* espaço entre os elementos do cabeçalho*/
+    align-items: center; /* alinhar elementos ao centro*/
+    border-bottom: 1px solid rgb(236, 225, 60);/* linha de borda do cabeçalho*/   
+
+}
+
+li{
+    display: inline-block;/* muda os elementos par Horizontal*/
+    margin: 30px; /* margem para separar os elementos*/
+}
+
+a{
+    color: white; /* cor do elemento*/
+    text-decoration:none; /* remove o sunblinhado*/
+    font-family:Arial, Helvetica, sans-serif; /* fonte do elemento*/
+
+}
+
+a:hover{ /* muda a cor do texto ao passar o mause*/
+    color: yellow; /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
+    padding: 10px; /* espaçamento entre os elementos e a borda*/
+    border-radius: 15px; /* Adicionando um raio na borda dos elementos*/
+}
+
+h1{
+    font-weight: 700; /* Espessura dafonte do H1*/
+    font-size: 38px; /* Aumentando o tamanho da fonte*/
+    padding: 10px; /* definido um espaçamento entre os elementos*/
+    color: yellow;/*alterando a cor da fonte */
+ 
+    
+}
+/*fim do cabeçalho*/
+
+
+/* Inicio do Principal*/
+main{
+    display: flex; /*Metodo de estilização*/
+    flex-direction: row;/* direção em linha*/
+    align-items: center; /*alinhamento no centro*/
+    justify-content: space-between; /*espaço etre os elementos*/
+    margin-top: 50px; /* magem dos elementos*/
+
+}   
+
+h3{
+    font-size: 30px; /* tamanho da fonte h2*/
+    line-height: 5px; /* definindo a altura do espaço entre os elementos*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(33, 141, 5);
+}
+
+h3:hover{ /* muda a cor do texto ao passar o mause*/
+    color: rgb(89, 226, 10); /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    cursor: pointer;/* muda o tipo do ponteiro do mause*/ 
+}
+
+     
+p{  /*estilizando o paragrafo*/
+    display: flex;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 35px; /* definindo a altura do espaço entre os elementos*/
+    max-width: 850px; /*  lagura maxima do paragrafo*/
+}
+
+img{
+    transition: 0.8s;/* trasição em segundos*/
+    width: 650px; /* tamanho da imagem*/
+    /*border-radius: 50%; /* borda da imagem com raio em %*/
+    /*border: 1px solid rgb(232, 245, 157); /*Cor da borda*/ 
+
+}
+
+img:hover{
+    transform: scale(1.15) rotate(90deg); /*inserindo altraçaõ na escala e uma rotação ma 
+    imagem ao pasar o mause sobre ela*/
+    
+}
+/* Fim do principal*/
+
+/*inicio formulário*/
+
+form{ /* estilizando o formuláro*/
+    display: flex; /*Metodo de estilização*/
+    flex-direction: column;/* muda a direção para coluna */
+    width: 250px; /* mudando o tamanho de elemento */
+    align-items: center;
+}
+form [type="submit"]{ /* alterando o enviar */
+    height: 50px; /*alterando a altura de fonte */
+    width: 80%; /* alterando a largura da fonte*/
+    background-color: rgb(89, 226, 10); /* alterando a cor internda */
+    color: rgb(0, 0, 0); /* alterando a cor do texto*/
+    font-weight: bold; /* alterando o formato da fonte*/
+}
+form [type="submit"]:hover{ /* alterando as propriedade ao passar o mause */
+    cursor: pointer;/* muda o tipo do ponteiro do mause*/ 
+    color: rgb(229, 231, 117);
+    background-color: black;
+    transition: 0.3s; /* efeito de transição no texto */
+}
+
+input{/* estilizando o imput*/
+    margin-top: 20px; /*adicionando uma margem */
+    height: 20px; /* aumentando o tamanho da altura do input*/
+    width: 50%;
+    padding: 15px; /* aumentando o espaço dos elementos dentro do input*/
+    border-radius: 25px; /* adicionando um raio na borda */
+    border: none;/* removendo a borda padrão do input*/
+    font-size: 18px;/* aumenta o tamanho da fonte */
+}
+#idtexto{
+    margin-top: 20px; /*adicionando uma margem */
+    height: 200px; /* aumentando o tamanho da altura do input*/
+    width: 230px;
+    padding: 15px; /* aumentando o espaço dos elementos dentro do input*/
+    border-radius: 25px; /* adicionando um raio na borda */
+    border: none;/* removendo a borda padrão do input*/
+    font-size: 18px;/* aumenta o tamanho da fonte */
+    resize: none;/* Redimensionamento "desabilitado* para a caixa de mensagem*/
+    
+
+}
+
+/*fim formulário*/
+
+
+/*Adicionando responsividade para dispositivos mobile*/
+@media screen and (max-width: 760px){
+    body{
+        background-color: blue; /*Alterando a cor da pagina*/
+    }
+
+    header{
+        flex-direction: column;/*mudando o cabeçalho para linha*/
+    }
+    main{
+        flex-direction: column;/*mudando o mai (principal)para o formato de linha*/
+    }
+    h1{
+        text-align: center;/* alinhando o texto no centro*/
+    }
+
+    ul{
+        text-align: center;/* alinhando o texto no centro*/
+
+    }
+
+    h3{
+        font-size: 25px;/* alterando o tamanho da fonte */
+        text-align: center;/* alinhando o texto no centro*/
+        color: yellow;
+    }
+
+    form{
+        margin: 0 auto; /* alterando o formulario para o centro da tela*/
+        width: 50%; /* alterando o tamanho da caixa do formulario */
+    }
+
+    }
+    input{
+        align-self: center; /*alinhando o formulario no meio*/
+        width: auto;
+        
+    }
+    img{
+        margin: 50px;
+        width: 150px;/*alterando o tamanho da imagem */
+    }
+
+    </style>
+
+</head>
+<body>
+    <!-- CABEÇALHO--->
+        <!-- INICIO DO CABEÇALHO-->
+        <header>
+            <div id="titulo">
+                <h1>Contato:</h1> 
+            </div>
+   
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.htm">SOBRE</a></li>
+                <li><a href="portifolio.html">FORMAÇÃO</a></li>
+                <li><a href="#">PORTIFOLIO</a></li>
+            </ul>    
+        </header>
+       <!-- FIM DO CABEÇALHO-->
+    <!-- INICIO PRINCIPAL-->
+    <main>
+        <aside>
+            <h3>Entre em contato comigo.</h3>
+            <p>
+                Embora atualmente não esteja trabalhando na área de desenvolvimento, minha caixa de entrada está sempre aberta.<br> 
+                Caso você queira dar uma oportunidade para trabalharmos juntos, ou apenas queira dizer Oi.<br> 
+                <br>
+                Farei o possível para entrar em contato com você!
+            </p>
+            <form class="formulario"> <!-- formulario de contato-->
+                <input type="text" placeholder="Nome"><!--botão do tipo texto com texto de fundo definido pelo placeholder-->
+                <input type="email"placeholder="E-mail"><!--botão do tipo e-mail com texto de fundo definido pelo placeholder-->
+                <textarea id="idtexto" name="idtexto" rows="5" cols="50"> Escreva sua mensagem</textarea> <!-- caixa de texto para mensagem-->
+                <input type="submit" value="Enviar>"> <!--Botão de enviar formuláro "value" define texto do botão -->
+            </form>
+        </aside>
+
+        <article><!--composição independente-->
+            <img src="3.png" alt="imagem">    
+        </article>
+    </main>
+    <!-- FIM PRINCIPAL-->    
+    
+</body>
+</html>

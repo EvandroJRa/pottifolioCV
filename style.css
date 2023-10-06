@@ -1,0 +1,196 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255) ; 
+    font-family: 'Roboto', sans-serif;
+    max-width: 1500px; /* tamanho maxi dos elementos*/
+    margin:0 auto; /* centraliza a pagina */
+    padding: 15px; /* aumentando o espaço entre o elemento*/
+}
+/* inicio do cabeçalho*/
+header{
+    display: flex; /*Metodo de estilização*/
+    flex-direction: row; /* Cabeçalho em linha*/
+    justify-content: space-between; /* espaço entre os elementos do cabeçalho*/
+    align-items: center; /* alinhar elementos ao centro*/
+    border-bottom: 1px solid rgb(236, 225, 60);/* linha de borda do cabeçalho*/   
+
+
+}
+
+#titulo{
+    flex-direction: column; /* TITULO em columa*/
+    line-height: 10px; /* definindo a altura do espaço entre os elementos*/
+}
+
+#ola{/*identificador para mudança do primeiro h1 da pagina*/
+    font-size: 40px; /*alterando o tamanho fa fonte do elemento com id"ola"*/
+    color: yellow;/*alterando a cor da fonte */
+}
+
+li{
+    display: inline-block;/* muda os elementos par Horizontal*/
+    margin: 30px; /* margem para separar os elementos*/
+}
+
+.link{
+    color: white; /* cor do elemento*/
+    text-decoration:none; /* remove o sunblinhado*/
+    font-family:Arial, Helvetica, sans-serif; /* fonte do elemento*/
+
+}
+
+.link:hover{ /* muda a cor do texto ao passar o mause*/
+    color: yellow; /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
+    padding: 10px; /* espaçamento entre os elementos e a borda*/
+    border-radius: 15px; /* Adicionando um raio na borda dos elementos*/
+}
+
+h1{
+    font-weight: 700; /* Espessura dafonte do H1*/
+    font-size: 38px; /* Aumentando o tamanho da fonte*/
+    padding: 10px; /* definido um espaçamento entre os elementos*/
+ 
+    
+}
+/*fim do cabeçalho*/
+
+/* Inicio do Principal*/
+main{
+    display: flex; /*Metodo de estilização*/
+    flex-direction: row;/* direção em linha*/
+    align-items: center; /*alinhamento no centro*/
+    justify-content: space-between; /*espaço etre os elementos*/
+    margin-top: 50px; /* magem dos elementos*/
+
+}
+h2{
+    padding: 15px;
+    font-size: 30px; /* tamanho da fonte h2*/
+    line-height: 10px; /* definindo a altura do espaço entre os elementos*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+h3{
+    font-size: 30px; /* tamanho da fonte h2*/
+    line-height: 5px; /* definindo a altura do espaço entre os elementos*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3:hover{ /* muda a cor do texto ao passar o mause*/
+    color: yellow; /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    cursor: pointer;/* muda o tipo do ponteiro do mause*/ 
+}  
+
+p{  
+    display: flex;
+    font-size: 28px;
+    text-align: justify;
+    padding:25px ;
+    line-height: 45px; /* definindo a altura do espaço entre os elementos*/
+    max-width: 750px; /*  lagura maxima do paragrafo*/
+}
+
+article{
+    display: flex;
+    position: absolute;
+    right: 80px;
+    left: 60%;
+    bottom: 330px;
+
+
+
+}
+
+section{
+    display: flex;
+    padding: 30px;/* definido um espaçamento entre os elementos*/
+    gap: 40px;
+
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.ico{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+i{  
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+
+}
+a{
+    color: white; /* cor do elemento*/
+    text-decoration:none; /* remove o sunblinhado*/
+    font-family:Arial, Helvetica, sans-serif; /* fonte do elemento*/
+
+}
+
+img{
+    width: 375px; /* dimensionando o tamanho da imagem*/
+    height: 375px;
+    margin: 10px; /* Adicionando uma margem */
+    border: 1px solid rgb(243, 243, 239);/* adicionando uma borda na imagem*/
+    border-radius: 50%;
+    border: 1px solid greenyellow;
+}
+
+
+
+/* Fim do principal*/
+
+/*Adicionando responsividade para dispositivos mobile*/
+@media screen and (max-width: 760px){
+    body{
+        background-color: rgb(91, 91, 109); /*Alterando a cor da pagina*/
+    }
+
+    header{
+        flex-direction: column;/*mudando o cabeçalho para linha*/
+    }
+    main{
+        flex-direction: column;/*mudando o mai (principal)para o formato de linha*/
+    }
+    h1{
+        text-align: center;/* alinhando o texto no centro*/
+    }
+
+    ul{
+        text-align: center;/* alinhando o texto no centro*/
+
+    }
+
+    h2{
+        font-size: 25px; /* alterando o tamanho da fonte do h2*/
+        text-align:center; /* alinhando o texto no centro*/
+    }
+    h3{
+        font-size: 12px;/* alterando o tamanho da fonte do h2*/
+        text-align: center;/* alinhando o texto no centro*/
+        color: yellow;
+    }
+    img{
+        margin: 10px;
+        width: 350px;/*alterando o tamanho da imagem */
+        display: none; /*Ocultando a imgem em dispositivos mobile*/
+        
+    }
+
+
+
+}
+    

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+body{ /* estilizando a pagina*/
+    background-color: rgb(0, 0, 0);/* cor da pagina*/
+    color:rgb(255, 255, 255) ; /*cor textos na pagina*/
+    font-family: 'Roboto', sans-serif;/* Fonte dos textos na pagina*/
+    max-width: 1500px; /* tamanho maximo dos elementos*/
+    margin:0 auto; /* centraliza a pagina */
+    padding: 15px; /* aumentando o espaço entre o elemento*/
+}
+/* inicio do cabeçalho*/
+header{
+    display: flex; /*Metodo de estilização*/
+    flex-direction: row; /* Cabeçalho em linha*/
+    justify-content: space-between; /* espaço entre os elementos do cabeçalho*/
+    align-items: center; /* alinhar elementos ao centro*/
+    border-bottom: 1px solid rgb(236, 225, 60);/* linha de borda do cabeçalho*/   
+    
+}
+
+li{
+    display: inline-block;/* muda os elementos par Horizontal*/
+    margin: 30px; /* margem para separar os elementos*/
+}
+
+a{
+    color: white; /* cor do elemento*/
+    text-decoration:none; /* remove o sunblinhado*/
+    font-family:Arial, Helvetica, sans-serif; /* fonte do elemento*/
+
+}
+
+a:hover{ /* muda a cor do texto ao passar o mause*/
+    color: yellow; /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
+    padding: 10px; /* espaçamento entre os elementos e a borda*/
+    border-radius: 15px; /* Adicionando um raio na borda dos elementos*/
+}
+
+h1{
+    font-weight: 700; /* Espessura dafonte do H1*/
+    font-size: 38px; /* Aumentando o tamanho da fonte*/
+    padding: 10px; /* definido um espaçamento entre os elementos*/
+    color: yellow;/*alterando a cor da fonte */
+}
+/*fim do cabeçalho*/
+
+/* Principal*/
+img{ 
+    display: flex;
+    width: 1500px; /*largura  da imagem*/
+    height: 650px; /* Altura da imgem*/
+    opacity: 0.25; /* Opacidade da image*/
+}
+    /* Fim */
+
+
+    </style>
+</head>
+<body> 
+    <!-- CABEÇALHO--->
+        <!--CABEÇALHO INICIO-->
+            <header>
+                <div id="titulo">
+                    <h1>HOME</h1> 
+                </div>      
+                <ul>
+                    <li><a href="sobre.htm">SOBRE</a></li>
+                    <li><a href="formacao.html">FORMAÇÃO</a></li>
+                    <li><a href="portifolio.html">PORTIFOLIO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </header>
+            <section class="img">
+                <div class="imagem">
+                    <img src="fundo_1.jpg" alt="fundo">
+                </div>
+
+            </section>
+        <!-- CABEÇALHO FIM-->
+
+    <!-- PRINCIPAL INICIO-->
+           
+     <!-- PRINCIPAL FIM-->
+</body>
+</html>
