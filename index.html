@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <style>
+
 body{ /* estilizando a pagina*/
     background-color: rgb(0, 0, 0);/* cor da pagina*/
     color:rgb(255, 255, 255) ; /*cor textos na pagina*/
@@ -60,6 +61,48 @@ img{
 }
     /* Fim */
 
+    /* DISPOSITIVOS MOVEIS*/
+
+    @media only screen and (max-device-width: 900px) {
+
+        body{ background-color: rgb(20, 20, 29);
+
+        }
+
+        header{
+            display: flex;/*Metodo de estilização*/
+            /*flex-direction: column; /* Cabeçalho em linha*/
+            align-items: center;
+            background-color: rgb(4, 29, 21);
+            border-radius: 15px;
+                        
+        }
+
+        h1{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        span{
+            font-size: 40px; /* Aumentando o tamanho da fonte a inicial "H"*/
+        }
+
+        li{
+            display: flex;
+            justify-content: left; /* Alinhamento do texto a Esquerda*/
+            
+        }
+
+        img{
+            display: grid;        
+            width: 350px; /*lagura maxima Maxima da Imagem*/
+            height: 50%; /* altura maxima com relação a largura em % */
+            border-radius: 25px;
+            
+            
+        }
+
+}   
 
     </style>
 </head>
@@ -68,7 +111,7 @@ img{
         <!--CABEÇALHO INICIO-->
             <header>
                 <div id="titulo">
-                    <h1>HOME</h1> 
+                    <h1><span>H</span>OME</h1> 
                 </div>      
                 <ul>
                     <li><a href="sobre.htm">SOBRE</a></li>

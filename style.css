@@ -154,30 +154,61 @@ img{
 /* Fim do principal*/
 
 /*Adicionando responsividade para dispositivos mobile*/
-@media screen and (max-width: 760px){
+@media screen and (max-width: 900px){
+
     body{
-        background-color: rgb(91, 91, 109); /*Alterando a cor da pagina*/
+        background-color: rgb(20, 20, 29); /*Alterando a cor da pagina*/
     }
 
     header{
         flex-direction: column;/*mudando o cabeçalho para linha*/
+        background-color: rgb(4, 29, 21);
+        border-radius: 15px;
     }
     main{
         flex-direction: column;/*mudando o mai (principal)para o formato de linha*/
+
     }
+
+    #ola{
+
+            text-align: justify;
+            font-size: 32px;
+    
+    }
+
+    
     h1{
-        text-align: center;/* alinhando o texto no centro*/
+        text-align: justify;/* alinhando o texto justificado*/
+        font-size: 25px;
     }
 
-    ul{
-        text-align: center;/* alinhando o texto no centro*/
-
+    span{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Alterando a fonte */
+        font-size: 30px; /* Tamanho da fonte*/
+        color: rgb(180, 218, 78); /* Cor da fonte*/
+    }
+    
+    li{
+        text-align: justify;/* alinhando o texto no centro*/
+     
+     
     }
 
     h2{
-        font-size: 25px; /* alterando o tamanho da fonte do h2*/
+        font-size: 35px; /* alterando o tamanho da fonte do h2*/
+        color: yellow; /* cor do texo em h2*/
         text-align:center; /* alinhando o texto no centro*/
+
+       
     }
+
+    p{
+        font-size: 20px;
+        color: rgb(180, 218, 78); /* Cor da fonte*/
+       
+    }
+
     h3{
         font-size: 12px;/* alterando o tamanho da fonte do h2*/
         text-align: center;/* alinhando o texto no centro*/
@@ -189,6 +220,20 @@ img{
         display: none; /*Ocultando a imgem em dispositivos mobile*/
         
     }
+
+    section{
+        
+        color: yellow;
+    }
+
+    section{
+        color: blue;
+        padding: 10px;/* definido um espaçamento entre os elementos*/
+        gap: 20px;
+        justify-content: center;
+    
+    }
+
 
 
 
