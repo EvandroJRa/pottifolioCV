@@ -174,7 +174,41 @@ h2{
 }
 
 /* Principal FIM*/
+/*Dispositivos moveis*/
+/*Adicionando responsividade para dispositivos mobile*/
+@media screen and (max-width: 900px){
 
+body{
+    background-color: rgb(20, 20, 29); /*Alterando a cor da pagina*/
+}
+
+header{
+    text-align: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+section{
+    display: grid;
+    align-items: center;
+}
+
+.cursos{
+    display: grid;
+    align-items: center;
+
+    
+}
+
+a{ /* muda a cor do texto ao passar o mause*/
+    color: rgb(179, 255, 0); /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
+    padding: 10px; /* espaçamento entre os elementos e a borda*/
+    border-radius: 15px; /* Adicionando um raio na borda dos elementos*/
+}
+
+}
     </style>
 </head>
 <body> 
@@ -205,9 +239,9 @@ h2{
                     <h3>Técnico de Edificações</h3>
                     <p>Senai</p>
                     <P>Ano 2016</P>
-                </div>-->
+                </div>
+            </section>-->
 
-            </section>
                 <h2>EM CONTRUÇÃO:</h2>
                 <section class="cursos ">
                     <div class="ph">

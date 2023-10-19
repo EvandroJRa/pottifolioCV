@@ -184,15 +184,32 @@ body{
 }
 
 header{
-    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.formacao{
+    display: grid;
     align-items: center;
-    flex-direction: row;
 }
 
+.cursos{
+    display: grid;
+    align-items: center;
 
-
+    
 }
 
+a{ /* muda a cor do texto ao passar o mause*/
+    color: rgb(179, 255, 0); /* cor do texto ao passar o mause por cima*/
+    transition: 0.5s all; /* efeito de transição no texto */
+    border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
+    padding: 10px; /* espaçamento entre os elementos e a borda*/
+    border-radius: 15px; /* Adicionando um raio na borda dos elementos*/
+}
+
+}
 
 
     </style>
@@ -202,7 +219,7 @@ header{
         <!--CABEÇALHO INICIO-->
             <header>
                 <div id="titulo">
-                    <h1>FORMAÇÃO</h1> 
+                    <h1><span>F</span>ORMAÇÃO</h1> 
                 </div>      
                 <ul>
                     <li><a href="index.html">HOME</a></li>
