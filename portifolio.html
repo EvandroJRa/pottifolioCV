@@ -51,42 +51,7 @@ h1{
 }
 /*fim do cabeçalho*/
 
-/* principal Inicio*/
-.formacao{
-    display: flex;
-    justify-content: center;/* centralizar elementos*/
-    border-bottom: 1px solid green;     
-}
-
-.ambiental{
-   text-align: center; /* alinhar texto ao centro*/
-   border: 1px solid green;/* Borda*/
-   border-radius: 25px;/*Raio da borda */
-   gap: 10px;
-   margin: 30px;
-}
-
-#ambi{
-    margin: 20px;
-    height: 250px;
-    width: 250px;
-    padding: 35px;
-}
-
-.cidade{
-   text-align: center;
-   border: 1px solid green;
-   border-radius: 25px;
-   gap: 10px;
-   margin: 30px;
-}
-
-#edificio{
-    margin: 20px;
-    height: 250px;
-    width: 250px;
-    padding: 35px;
-}
+/* Principal inicio*/
 
 h3{
     text-align: center;
@@ -97,27 +62,18 @@ h2{
     color: yellow;
 }
 
-.cursos{
+section.trabalho{
     display: flex;
-    justify-content: center;/* centralizar elementos*/  
-    gap: 30px;  
-}
-.ph{
-   text-align: center; /* alinhar texto ao centro*/
-   border: 1px solid rgb(251, 252, 251);/* Borda*/
-   border-radius: 25px;/*Raio da borda */
-   gap: 10px;
-   margin: 3px;
+    flex-wrap: wrap;/*Define se os itens devem quebrar ou não a linha. */
+    
 }
 
-#python{
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    padding: 5px;
+.trabalho{
+    display: flex;
+    justify-content: left;/* centralizar elementos*/  
+    
 }
-
-.ht{
+.ht{ /* difinição da boz onde ficam as logomarcas*/
    text-align: center; /* alinhar texto ao centro*/
    border: 1px solid rgb(255, 255, 255);/* Borda*/
    border-radius: 25px;/*Raio da borda */
@@ -145,33 +101,18 @@ h2{
     padding: 5px;
 }
 
-.js{
-   text-align: center; /* alinhar texto ao centro*/
-   border: 1px solid rgb(255, 255, 255);/* Borda*/
-   border-radius: 25px;/*Raio da borda */
-   margin: 3px;
+#sites{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    border-radius: 65px;
+    align-items: center;
+    padding: 20px;
+
+    
 }
 
-#javascript{
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    padding: 5px;
-}
 
-.my{
-   text-align: center; /* alinhar texto ao centro*/
-   border: 1px solid rgb(255, 255, 255);/* Borda*/
-   border-radius: 25px;/*Raio da borda */
-   margin: 3px;
-}
-
-#mysql{
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    padding: 5px;
-}
 
 /* Principal FIM*/
 /*Dispositivos moveis*/
@@ -193,12 +134,6 @@ section{
     align-items: center;
 }
 
-.cursos{
-    display: grid;
-    align-items: center;
-
-    
-}
 
 a{ /* muda a cor do texto ao passar o mause*/
     color: rgb(179, 255, 0); /* cor do texto ao passar o mause por cima*/
@@ -212,64 +147,36 @@ a{ /* muda a cor do texto ao passar o mause*/
     </style>
 </head>
 <body> 
-    <!-- CABEÇALHO--->
-        <!--CABEÇALHO INICIO-->
-            <header>
-                <div id="titulo">
-                    <h1>PORTIFOLIO</h1> 
-                </div>      
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="sobre.htm">SOBRE</a></li>
-                    <li><a href="formacao.html">FORMAÇÃO</a></li>
-                    <li><a href="contato.html">CONTATO</a></li>
-                </ul>
-            </header>
-        <!-- CABEÇALHO FIM-->
-        <!--PRNCIPAL INICIO-->
-            <!--<section class="formacao">
-                <div class="ambiental">
-                    <img id="ambi" src="Arvore.png" alt="arvore">
-                    <h3>Técnologo em Gestão Ambiental</h3>
-                    <p>Centro Universitário Uninter</p>
-                    <P>Ano 2020</P>
-                </div>
-                <div class="cidade">
-                    <img id="edificio" src="cidade.png" alt="edificio">
-                    <h3>Técnico de Edificações</h3>
-                    <p>Senai</p>
-                    <P>Ano 2016</P>
-                </div>
-            </section>-->
+<!--NAVEGAÇÃO INICIO-->
+    <header>
+        <div id="titulo">
+            <h1>PORTIFOLIO</h1> 
+        </div>      
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobre.htm">SOBRE</a></li>
+            <li><a href="formacao.html">FORMAÇÃO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+    </header>
+<!--* Principal inicio-->
+    <h2>EM CONTRUÇÃO:</h2>
 
-                <h2>EM CONTRUÇÃO:</h2>
-                <section class="cursos ">
-                    <div class="ph">
-                        <img id="python" src="python.png" alt="python">
-                        <p>PYTHON</p>
-                    </div>
+    <section class="trabalho">
+        <div class="ht">
+            <img id="html" src="html.png" alt="python">
+            <p>HTML</p>
+            <img id="css" src="css.png" alt="python">
+            <p>CSS</p>
+        </div>
+     
+        <div class="paginas">
+            <a href="https://evandrojra.github.io/formulario/" title="pagina contato" >
+                <img id="sites" src="pghtml.png" alt="pagina"></a>
+        </div> 
 
-                    <div class="ht">
-                        <img id="html" src="html.png" alt="python">
-                        <p>HTML</p>
-                    </div>  
+    </section>
 
-                    <div class="cs">
-                        <img id="css" src="css.png" alt="python">
-                        <p>CSS</p>
-                    </div>
-
-                    <div class="js">
-                        <img id="javascript" src="js.png" alt="python">
-                        <p>JAVASCRIPT</p>
-                    </div>
-
-                    <div class="my">
-                        <img id="mysql" src="mysql.png" alt="python">
-                        <p>MYSQL</p>
-                    </div>
-
-                </section>
-     <!-- PRINCIPAL FIM-->
+<!--Principal FIM-->    
 </body>
 </html>

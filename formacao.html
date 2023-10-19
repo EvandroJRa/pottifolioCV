@@ -13,7 +13,7 @@ body{ /* estilizando a pagina*/
     margin:0 auto; /* centraliza a pagina */
     padding: 15px; /* aumentando o espaço entre o elemento*/
 }
-/* inicio do cabeçalho*/
+/* Navegação Inicio*/
 header{
     display: flex; /*Metodo de estilização*/
     flex-direction: row; /* Cabeçalho em linha*/
@@ -49,11 +49,16 @@ h1{
     padding: 10px; /* definido um espaçamento entre os elementos*/
     color: yellow;/*alterando a cor da fonte */
 }
-/*fim do cabeçalho*/
+/*Navegação FIM*/
 
 /* principal Inicio*/
+section{
+    display: flex; 
+    flex-wrap: wrap; /*Define se os itens devem quebrar ou não a linha. */
+    
+}
+
 .formacao{
-    display: flex;
     justify-content: center;/* centralizar elementos*/
     border-bottom: 1px solid green;     
 }
@@ -82,8 +87,8 @@ h1{
 }
 
 #edificio{
-    margin: 20px;
-    height: 250px;
+    margin: 20px; /*margem*/
+    height: 250px; /*Altura*/
     width: 250px;
     padding: 35px;
 }
@@ -107,7 +112,7 @@ h2{
    border: 1px solid rgb(251, 252, 251);/* Borda*/
    border-radius: 25px;/*Raio da borda */
    gap: 10px;
-   margin: 3px;
+   margin: 3px; 
 }
 
 #python{

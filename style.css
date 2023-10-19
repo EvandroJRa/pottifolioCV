@@ -154,7 +154,7 @@ img{
 /* Fim do principal*/
 
 /*Adicionando responsividade para dispositivos mobile*/
-@media screen and (max-width: 900px){
+@media screen and (max-width: 760px){
 
     body{
         background-color: rgb(20, 20, 29); /*Alterando a cor da pagina*/
@@ -172,8 +172,8 @@ img{
 
     #ola{
 
-            text-align: justify;
-            font-size: 32px;
+       text-align: justify;
+        font-size: 32px;
     
     }
 
