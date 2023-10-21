@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTIFOLIO</title>
     <style>
+
 body{ /* estilizando a pagina*/
     background-color: rgb(0, 0, 0);/* cor da pagina*/
     color:rgb(255, 255, 255) ; /*cor textos na pagina*/
@@ -13,7 +14,7 @@ body{ /* estilizando a pagina*/
     margin:0 auto; /* centraliza a pagina */
     padding: 15px; /* aumentando o espaço entre o elemento*/
 }
-/* inicio do cabeçalho*/
+/* inicio do Header*/
 header{
     display: flex; /*Metodo de estilização*/
     flex-direction: row; /* Cabeçalho em linha*/
@@ -23,19 +24,19 @@ header{
     
 }
 
-li{
-    display: inline-block;/* muda os elementos par Horizontal*/
+.container li{
+    display: inline-block;/* muda os elementos para Horizontal*/
     margin: 30px; /* margem para separar os elementos*/
 }
 
-a{
+.container ul li a{
     color: white; /* cor do elemento*/
     text-decoration:none; /* remove o sunblinhado*/
     font-family:Arial, Helvetica, sans-serif; /* fonte do elemento*/
 
 }
 
-a:hover{ /* muda a cor do texto ao passar o mause*/
+.container ul li a:hover{ /* muda a cor do texto ao passar o mause*/
     color: yellow; /* cor do texto ao passar o mause por cima*/
     transition: 0.5s all; /* efeito de transição no texto */
     border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
@@ -46,96 +47,56 @@ a:hover{ /* muda a cor do texto ao passar o mause*/
 h1{
     font-weight: 700; /* Espessura dafonte do H1*/
     font-size: 38px; /* Aumentando o tamanho da fonte*/
-    padding: 10px; /* definido um espaçamento entre os elementos*/
+    padding: 5px; /* definido um espaçamento entre os elementos*/
     color: yellow;/*alterando a cor da fonte */
 }
-/*fim do cabeçalho*/
+/*fim do Header*/
 
 /* Principal inicio*/
-
-h3{
-    text-align: center;
-}
-
 h2{
     font-size: 28px;
     color: yellow;
+
 }
 
-section.trabalho{
-    display: flex;
-    flex-wrap: wrap;/*Define se os itens devem quebrar ou não a linha. */
-    
+.container1{
+    padding: 10px;
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  
+
 }
 
-.trabalho{
-    display: flex;
-    justify-content: left;/* centralizar elementos*/  
-    
-}
-.ht{ /* difinição da boz onde ficam as logomarcas*/
-   text-align: center; /* alinhar texto ao centro*/
-   border: 1px solid rgb(255, 255, 255);/* Borda*/
-   border-radius: 25px;/*Raio da borda */
-   margin: 3px;
+#sites1{
+    width: 650px;
+    border-radius: 25px;
+    border: 1px solid green;  
 }
 
-#html{
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    padding: 5px;
+#sites2{
+    width: 450px;
+    border-radius: 25px;
+    border: 1px solid green;  
 }
-
-.cs{
-   text-align: center; /* alinhar texto ao centro*/
-   border: 1px solid rgb(255, 255, 255);/* Borda*/
-   border-radius: 25px;/*Raio da borda */
-   margin: 3px;
-}
-
-#css{
-    margin: 20px;
-    height: 200px;
-    width: 200px;
-    padding: 5px;
-}
-
-#sites{
-    display: flex;
-    flex-direction: row;
-    width: 550px;
-    border-radius: 65px;
-    align-items: center;
-    padding: 20px;
-
-    
-}
-
-
 
 /* Principal FIM*/
 /*Dispositivos moveis*/
 /*Adicionando responsividade para dispositivos mobile*/
-@media screen and (max-width: 900px){
+@media screen and (max-width: 750px){
 
 body{
     background-color: rgb(20, 20, 29); /*Alterando a cor da pagina*/
 }
 
 header{
-    text-align: center;
-    flex-direction: column;
-    font-size: 15px;
+    text-align: center; /*alinhamento do texto*/
+    flex-direction: column;/*header em coluna*/
+    font-size: 15px;/*tamanho da fonte*/
 }
 
-section{
-    display: grid;
-    align-items: center;
-}
-
-
-a{ /* muda a cor do texto ao passar o mause*/
+.container ul li a{ /* altera a cor do texto ao passar o mause*/
     color: rgb(179, 255, 0); /* cor do texto ao passar o mause por cima*/
     transition: 0.5s all; /* efeito de transição no texto */
     border: 1px solid green; /* adicionabdo uma borda ao elemrnto e uma cor*/
@@ -145,39 +106,40 @@ a{ /* muda a cor do texto ao passar o mause*/
 
 }
     </style>
+
 </head>
 <body> 
 <!--NAVEGAÇÃO INICIO-->
     <header>
-        <div id="titulo">
-            <h1>PORTIFOLIO</h1> 
-        </div>      
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="sobre.htm">SOBRE</a></li>
-            <li><a href="formacao.html">FORMAÇÃO</a></li>
-            <li><a href="contato.html">CONTATO</a></li>
-        </ul>
+
+        <div id="titulo"> </div>
+            <h1>PORTIFOLIO</h1>
+            <div class="container"> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.htm">SOBRE</a></li>
+                    <li><a href="formacao.html">FORMAÇÃO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>    
     </header>
-<!--* Principal inicio-->
-    <h2>EM CONTRUÇÃO:</h2>
-
-    <section class="trabalho">
-        <div class="ht">
-            <img id="html" src="html.png" alt="python">
-            <p>HTML</p>
-            <img id="css" src="css.png" alt="python">
-            <p>CSS</p>
+<!-- NAVEGAÇÃO FIM-->    
+<!-- Principal inicio-->
+    <nav class="container1">
+        <div>
+           <a href="https://evandrojra.github.io/pottifolioCV/" title="pagina contato" >
+            <img id="sites1" src="pg1.PNG" alt="pagina"></a>
+            <h3>Site</h3>
         </div>
-    </section>    
-     
-        <div class="paginas">
+
+        <div>
             <a href="https://evandrojra.github.io/formulario/" title="pagina contato" >
-                <img id="sites" src="pghtml.png" alt="pagina"></a>
-        </div> 
-
-
-
+             <img id="sites2" src="pg2.PNG" alt="pagina"></a>
+             <h3>Parte de um site Pagina de Contato</h3>
+         </div> 
+        
+    </nav>  
 <!--Principal FIM-->    
 </body>
 </html>
